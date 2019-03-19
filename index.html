@@ -1,1 +1,231 @@
-Hello World
+
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+
+.header {
+  font-family: Comic Sans MS, cursive, sans-serif;
+  background-color: white;
+  padding: 10px;
+  text-align: center;
+  font-size: 35px;
+  color: rgb(0, 0, 0);
+}
+
+.nav {
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+}
+
+.nav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.nav a:hover {
+  background-color: rgb(0, 0, 0);
+}
+
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.row:after {
+  content: ;
+  display: table;
+  clear: both;
+}
+
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background-color: #000;
+  margin-top: 20px;
+  color: white;
+  font-family: cursive, sans-serif;
+}
+
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .nav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+tr {
+  width: 70%;
+}
+
+th {
+  width: 30;
+}
+
+@media {
+  tr, th{
+    width: 100%;
+  }
+}
+
+.icon {
+  width:30%;
+}
+
+img {
+  cursor:pointer;
+}
+
+</style>
+</head>
+<body>
+
+<div class=header>
+  <h1>My brief introduction</h1>
+</div>
+
+<div class=nav>
+  <a class=active href=#home>Home</a></li>
+  <a href=#contact id=contact>Contact</a>
+  <a href=#fun style=float:right>Fun</a>
+</div>
+
+<div class=row>
+  <div class=leftcolumn>
+    <div class=card>
+      <h2>A PICTURE OF MINE</h2>
+      <h5>A flash appearance of mine, Mar 19, 2019</h5>
+      <img src=https://upload.wikimedia.org/wikipedia/commons/f/f2/Thisisme2.jpg alt=Me studying in the middle of a pond style=width:100% title=I dont know why it is rotated like this...>
+      <p>So here I am in the middle of the pond trying to review for final exam...</p>
+    </div>
+    <div class=card>
+      <h2>MY LOVE</h2>
+      <h5>The girl whom I love, Mar 19, 2019</h5>
+      <div class=fakeimg style=auto>Image</div>
+      <p>She is cute, right?</p>
+    </div>
+  </div>
+  <div class=rightcolumn>
+    <div class=card>
+      <h2>About Me</h2>
+      <img src=https://upload.wikimedia.org/wikipedia/commons/4/4f/Thisisme.jpg alt=me trying to act cool title=ninja here style=width:100%>
+      <table style=width:100%>
+      <tr>
+        <br>
+        <th>Name</th>
+            <td>Duc Anh</td>
+        </tr>
+        <tr>
+        <th>DoB</th>
+            <td>13/12/1999</td>
+        </tr>
+        <tr>
+        <th>Gender</th>
+            <td>Male</td>
+        </tr>
+        <tr>
+        <th>Status</th>
+            <td>
+            <ul>
+                <li>Alive</li>
+<li>In a relationship</li>
+                </ul>
+            </td>
+        </tr>
+      </table>
+    </div>
+    <div class=card>
+      <h3>Follow Me</h3>
+      <br>
+      <img src=https://forkliftuniversitycalifornia.com/images/social/facebook_icon_round.png class=icon id=fb>
+      <img src=http://cdn.osxdaily.com/wp-content/uploads/2017/02/instagram-icon.jpg class=icon style=float:right id =ins>
+    </div>
+  </div>
+</div>
+
+<div class=footer>
+  <h2>That should be everything for being brief</h2>
+</div>
+
+<script>
+document.getElementById('fb').onclick=function(){
+  window.location.href = https://www.facebook.com/ta.ducanh.54;
+}
+
+document.getElementById('ins').onclick=function(){
+  window.location.href = https://www.instagram.com/ducanhh12/;
+}
+
+document.getElementById('contact').onclick=function(){
+ alert(Sorry, Im not that easy to give you my contact :(");
+}
+/*function alert() {
+  alert("Sorry, Im not that easy to give you my contact);
+}*/
+</script>
+
+</body>
+</html>
+
